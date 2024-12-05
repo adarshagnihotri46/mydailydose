@@ -1,42 +1,204 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family:poppins ;
+}
+
+.df{
+  display: flex;
+}
+
+.test{
+  background-color: red;
+}
+
+.gap-10{
+  gap: 10px;
+}
+
+
+.center{
+  align-items: center;
+}
+
+.ball{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color:  #208a51;
+ 
+}
+
+.container{
+width: 96%;
+border-radius: 8pxpagination-container;
+margin: auto;
+
+}
+/* Search Filter */
+.search-filter {
+  margin-bottom: 20px;
+  float: right;
+  border: none;
+  /* background: grey; */
+}
+
+/* Sort Buttons */
+.sort-buttons {
+  margin-bottom: 15px;
+}
+
+.sort-btn {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+
+.sort-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.table-container{
+ box-shadow: 0 0 10px 0 rgba(191, 189, 189, 0.3);
+
+}
+
+.camera-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  max-height: 70vh;
+overflow-y: scroll;
+}
+
+.table-header {
+  padding: 12px;
+  background-color: #f4f4f4;
+  font-weight: 500;
+  color: grey;
+  text-align: left;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.table-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-cell {
+  padding: 12px;
+  text-align: left;
+  gap: 4px;
+}
+
+
+
+
+
+
+.actions-cell {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Status Button */
+.status-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-btn.active {
+  background-color: #27b67a36;
+  color: #10b36f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.status-btn.inactive {
+  background-color: rgba(128, 128, 128, 0.094);
+  color: grey;
 }
 
-.card {
-  padding: 2em;
+/* Checkbox */
+.camera-checkbox {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+/* No Data */
+.no-data-row {
+  text-align: center;
+}
+
+.no-data-cell {
+  text-align: center;
+  color: gray;
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  float: right;
+}
+
+.selectPage{
+  border: none;
+  font-size: 16px;
+}
+
+/* .selectPage{
+  border: none;
+  font-size: 16px;
+} */
+
+/* Container styles */
+.circular-progress-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background circle styles */
+.circular-progress-bg {
+  fill: none;
+  /* stroke: #e6e6e6; */
+}
+
+/* Progress bar styles */
+.circular-progress-bar {
+  fill: none;
+  /* stroke: #4caf50; Green */
+  stroke-linecap: round;
+  stroke-width: 3px;
+  transition: stroke-dashoffset 0.3s ease; /* Smooth transition for dynamic updates */
+}
+
+/* Center letter styles */
+.circular-progress-letter {
+  position: absolute;
+  font-weight: bold;
+  color: #333;
+}
+
+.paginationButton button{
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+
+.sort-buttons .selected{
+  background-color: #4caf50;
+  color: white;
 }
